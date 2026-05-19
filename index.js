@@ -306,7 +306,7 @@ app.post('/pedidos', (req, res) => {
 
 // 🚀 Servidor
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en puerto ${PORT}`);
 });
 
 app.get('/', (req, res) => {
