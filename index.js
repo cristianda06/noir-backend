@@ -1,12 +1,17 @@
 const express = require('express');
 const cors = require('cors');
 const db = require('./config/db');
-require('dotenv').config();
+require('dotenv').config();   
 
 const app = express();
 
 app.use(cors({
-    origin: ['https://noir-frontend-sable.vercel.app', 'http://localhost:5500', 'http://127.0.0.1:5500'],
+    origin: [
+        'https://noir-frontend-sable.vercel.app',
+        'https://noir-frontend-git-main-cristian23.vercel.app',
+        'http://localhost:5500',
+        'http://127.0.0.1:5500'
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
